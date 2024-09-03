@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Define the schema
 const profileSchema = new mongoose.Schema({
     gender: {
         type: String,
@@ -19,4 +20,9 @@ const profileSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model("Profile", profileSchema);
+
+const Profile = mongoose.model("Profile", profileSchema);
+
+
+
+module.exports = Profile;
